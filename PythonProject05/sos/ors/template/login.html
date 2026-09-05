@@ -6,27 +6,32 @@
 </head>
 <body>
     {% include 'header.html'%}
-<div align="center">
   <form method="POST">
       {% csrf_token %}
+      <div align="center">
+
+          <h1>Login</h1>
+          <font color="red"><h3>{{ message }}</h3></font>
+
 
     <table>
      <tr>
-        <th>LoginID:</th>
-        <td><input type="text" name="loginID"></td>
+        <th>Login ID:</th>
+        <td><input type="text" name="loginId"></td>
      </tr>
       <tr>
         <th>Password:</th>
-        <td> <input type="text" name="Password"></td>
+        <td> <input type="text" name="password"></td>
       </tr>
 
         <tr>
             <th></th>
-            <td><input type="submit" value="Login"></td>
+            <td><input type="submit" value="signin"></td>
         </tr>
     </table>
+          </div>
+
   </form>
-</div>
 
 </body>
 </html>

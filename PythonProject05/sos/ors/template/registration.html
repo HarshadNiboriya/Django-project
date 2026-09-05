@@ -5,46 +5,42 @@
     <title>Title</title>
 </head>
 <body>
-{% include 'header.html'%}
-<div align="center">
-    <form method="POST">
-        {% csrf_token %}
+{% include 'header.html' %}
+<form method="POST">
+    {% csrf_token %}
+    <div align="center">
         <h1>User Registration</h1>
         <table>
             <tr>
-                <th>Firstname:</th>
+                <th>First Name:</th>
                 <td><input type="text" name="firstName"></td>
             </tr>
             <tr>
-                <th>Lastname:</th>
+                <th>Last Name:</th>
                 <td><input type="text" name="lastName"></td>
             </tr>
-
             <tr>
-                <th>LoginID:</th>
-                <td><input type="text" name="loginID"></td>
+                <th>Login ID:</th>
+                <td><input type="text" name="loginId"></td>
             </tr>
             <tr>
-                <th>Password</th>
-                <td><input type="text" name="Password"></td>
-            </tr>
-
-            <tr>
-                <th>Address:</th>
-                <td><input type="text" name="Address"></td>
-
+                <th>Password:</th>
+                <td><input type="text" name="password"></td>
             </tr>
             <tr>
                 <th>DOB:</th>
-                <td><input type="text" name="DOB"></td>
+                <td><input type="text" name="dob"></td>
+            </tr>
+            <tr>
+                <th>Address:</th>
+                <td><input type="text" name="address"></td>
             </tr>
             <tr>
                 <th></th>
                 <td><input type="submit" value="signUp"></td>
             </tr>
         </table>
-    </form>
-</div>
-
+    </div>
+</form>
 </body>
 </html>

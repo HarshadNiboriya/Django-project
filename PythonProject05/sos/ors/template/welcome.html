@@ -10,6 +10,12 @@
 <div align="center">
   <h1><b>welcome to ors<b></h1>
 
+    {% if firstName == None %}
+    <h3> Welcome, Guest</h3>
+    {% else %}
+    <h3>welcome, {{firstName}}</h3>
+    {% endif %}
+
 </div>
 
 </body>
